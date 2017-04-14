@@ -33,99 +33,152 @@
 		<h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
 	</header>
 	<main class="container content">						<!-- Контент -->
-		<section class="content-options">		<!-- Опции макетов(левая секция) -->
-			<div class="options-price">			
-				<h2>СТОИМОСТЬ:</h2>
-				<div class="slider-range"></div>		<!-- ПОЛЗУНОК -->
-				<label>
-					ОТ <input type="text" name="price" value="0">	
-				</label>
-				<label>
-					ДО <input type="text" name="price" value="15000">
-				</label>
-			</div>
-			<div class="options-grid"> 			<!-- СЕТКА -->
-				<h2>СЕТКА:</h2>
-				<ul>
-					<li class="grid-selected">			<!-- Выбранный пункт -->
+		<form class="content-options">		<!-- Опции макетов(левая секция) -->
+			<fieldset class="options-price">			
+				<legend>СТОИМОСТЬ:</legend>
+				<div class="slider-range">			<!-- ПОЛЗУНОК  СКОПИРОВАН КОД, НЕ ЯСЕН ПРИЦИП ДЕЙСТВИЯ. УЗНАТЬ-->
+					<div class="scale ">
+						<div class='bar' style="width:70%;"></div>
+					</div>
+					<div class="toggle min-toggle"></div>
+					<div class="toggle max-toggle"></div>
+				</div>		
+				<div class="text-range">			<!-- Диапазон вводимый в ручную -->
+					<label>
+						ОТ <input type="text" name="price" value="0">	
+					</label>
+					<label>
+						ДО <input type="text" name="price" value="15000">
+					</label>
+				</div>
+			</fieldset>
+			<fieldset class="options-grid"> 			<!-- СЕТКА -->
+				<legend>СЕТКА:</legend>
 						<label>
-							<input type="checkbox" checked>
+							<input type="radio" name="grid" value="adaptive" checked>
 							Адаптивная
 						</label>
-					</li>
-					<li>
+						<br>
 						<label>
-							<input type="checkbox">
+							<input type="radio" name="grid" value="fixed">
 							Фиксированная
 						</label>
-					</li>
-					<li>
+						<br>
 						<label>
-							<input type="checkbox">
+							<input type="radio" name="grid" value="rezin">
 							Резиновая
 						</label>
-					</li>
-				</ul>
-			</div>
-			<div class="options-features">			<!-- ОСОБЕННОСТИ -->
-				<h2>ОСОБЕННОСТИ:</h2>
-				<ul>
-					<li class="features-selected">		<!-- Выбранный пункт -->
+			</fieldset>
+			<fieldset class="options-features">			<!-- ОСОБЕННОСТИ -->
+				<legend>ОСОБЕННОСТИ:</legend>
 						<label>
-							<input type="checkbox" checked>
+							<input type="checkbox" name="slide" checked>
 							Слайдер
 						</label>
-					</li>
-					<li>
+						<br>
 						<label>
 							<input type="checkbox">
 							Блок преимуществ
 						</label>
-					</li>
-					<li class="features-selected">		<!-- Выбранный пункт -->
+						<br>
 						<label>
-							<input type="checkbox" checked>
+							<input type="checkbox" name="news" checked>
 							Новости
 						</label>
-					</li>
-					<li>
+						<br>
 						<label>
 							<input type="checkbox">
 							Галерея
 						</label>
-					</li>
-					<li>
+						<br>
 						<label>
 							<input type="checkbox">
 							Корзина
 						</label>
+						<br>
+			</fieldset>
+				<input type="submit" value="ПОКАЗАТЬ">		<!-- Кнопка левой секции -->
+		</form>
+		<section class="content-items">		<!-- Примеры(правая секция) -->
+			<div class="items-sorting">					
+				<span>СОРТИРОВАТЬ:</span>
+				<ul>
+					<li>
+						<a href="#">ПО ЦЕНЕ</a>
+					</li>
+					<li>
+						<a href="#">ПО ТИПУ</a>
+					</li>
+					<li>
+						<a href="#">ПО ФУНКЦИОНАЛУ</a>
 					</li>
 				</ul>
+				<div class="sorting-down"></div>		<!-- Треугольник-переключатель (Снизу-Вверх) -->
+				<div class="sorting-top-selected"></div>		<!-- Треугольник-переключатель (Сверху-Вниз) -->
 			</div>
-			<div class="btn options-btn">			<!-- Кнопка левой секции -->
-				ПОКАЗАТЬ
+			<div class="items">
+				<div class="item-card">				<!-- Карточка Кейса -->
+					<div class="item-wrapper">
+						<div class="item-header">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<img class="photos-first" src="#" alt="AVIATOR">
+					</div>
+				</div>
+				<div class="item-card">
+					<div class="item-wrapper">
+						<div class="item-header">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<img class="photos-second photos-hover" src="#" alt="SUNSET">		<!-- Мышка наведена на макет -->
+					</div>
+				</div>
+				<div class="item-card">
+					<div class="item-wrapper">
+						<div class="item-header">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<img class="photos-third" src="#" alt="FORTE">
+					</div>
+				</div>
+				<div class="item-card">
+					<div class="item-wrapper">
+						<div class="item-header">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<img class="photos-fourth" src="#" alt="MARQUEE">
+					</div>
+				</div>
+				<div class="item-card">
+					<div class="item-wrapper">
+						<div class="item-header">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<img class="photos-fifth" src="#" alt="AVENUE">
+					</div>
+				</div>
+				<div class="item-card">
+					<div class="item-wrapper">
+						<div class="item-header">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<img class="photos-sixth" src="#" alt="DOVETAIL">
+					</div>
+				</div>
 			</div>
-		</section>
-		<section class="content-examples">		<!-- Примеры(правая секция) -->
-			<div class="examples-sorting">					
-				СОРТИРОВАТЬ:
-				<a href="#">ПО ЦЕНЕ</a>
-				<a href="#">ПО ТИПУ</a>
-				<a href="#">ПО ФУНКЦИОНАЛУ</a>
-				<a class="sorting-down" href="#">		<!-- Треугольник-переключатель (Снизу-Вверх) -->
-					<img src="#" alt="Снизу-Вверх">
-				</a>
-				<img class="sorting-top-selected" src="#" alt="Сверху-Вниз">		<!-- Треугольник-переключатель (Сверху-Вниз) -->
-			</div>
-			<div class="examples-photos">				<!-- Фото макетов -->
-				<img class="photos-first" src="#" alt="AVIATOR">
-				<img class="photos-second photos-hover" src="#" alt="SUNSET">		<!-- Мышка наведена на макет -->
-				<img class="photos-third" src="#" alt="FORTE">
-				<img class="photos-fourth" src="#" alt="MARQUEE">
-				<img class="photos-fifth" src="#" alt="AVENUE">
-				<img class="photos-sixth" src="#" alt="DOVETAIL">
-			</div>
-			<div class="examples-paginator">				<!-- Переключатель страниц -->
+			<div class="items-paginator">				<!-- Переключатель страниц -->
 				<a class="paginator-one" href="#">1</a>
 				<a class="paginator-two" href="#">2</a>
 				<a class="paginator-three" href="#">3</a>
