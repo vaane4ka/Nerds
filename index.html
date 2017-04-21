@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nerds - Дизайн Студия</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 	<header class="main-header">  
-		<div class="container">        							
-			<img class="header-logo" src="#" alt="Nerds Логотип">		<!-- Логотип в шапке меню -->
-			<nav class="main-navigation">							<!-- Меню -->
+		<div class="container clearfix">        					
+			<img class="header-logo" src="#" alt="Nerds Логотип">		
+			<nav class="main-navigation">				
 				<ul>
 					<li>
 						<a href="#">СТУДИЯ</a>
@@ -24,45 +25,37 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="user-basket">					<!-- Корзина посетителя  -->
+			<div class="user-basket">					
 				<a class="basket" href="#">КОРЗИНА</a>
 			</div>
 		</div>
 	</header>
-	<header class="second-header">				<!-- Второй хедер(СЛАЙДЕР) -->
+	<header class="second-header">				
 		<div class="container">
-			<div class="slides">
-				<ul>
-					<li>
-						<img src="#" alt="#">
-						<div>
-							<h1>Долго, дорого<br>
-					        скрупулезно.</h1>
-							<p>Математически выверенный дизайн<br>
-					   		для вашего сайта или мобильного приложения.</p>
-							<div class="btn slides-btn">
-								<span>УЗНАТЬ БОЛЬШЕ</span>
-							</div>
-						</div>
-					</li>
-					<li>
-						<img src="#" alt="#">
-						<div>
-							Описание1
-						</div>
-					</li>
-					<li>
-						<div>
-							Описание2
-						</div>
-					</li>
-				</ul>
+			<div class="slide">
+						<!-- Slide 1 -->
+			 <div class="slide-first">
+	              <p class="slide-title">Долго, дорого, скрупулезно.</p>
+	              <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+	              <a href="#" class="btn slide-btn">Узнать больше</a>
+              </div>
+              			 <!-- Slide 2 -->
+              <div class="slide-second">
+	              <p class="slide-title">Любите ли вы математику, как любим ее мы?</p>
+	              <p class="slide-text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+	              <a href="#" class="btn slide-btn">Узнать больше</a>
 			</div>
+						 <!-- Slide 3 -->
+			 <div class="slide-third">
+	              <p class="slide-title">Только наркотики, только хардкор!</p>
+	              <p class="slide-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+	              <a href="#" class="btn slide-btn">Узнать больше</a>
+            </div>
 		</div>
 	</header>
 	<main>
-		<div class="container content">					<!-- Контент -->
-			<section class="сontent-services">		<!-- Услуги -->
+		<div class="container content">					
+			<section class="сontent-services clearfix">
 				<div class="services-site">		
 					<img src="#" alt="ВЕБ-САЙТЫ">
 					<h2>ВЕБ-САЙТЫ</h2>
@@ -83,7 +76,7 @@
 				</div>
 				<div class="services-presentation">
 					<img src="#" alt="ПРЕЗЕНТАЦИИ">
-					<h6>ПРЕЗЕНТАЦИИ</h6>
+					<h2>ПРЕЗЕНТАЦИИ</h2>
 					<p>Вы даже не представляете,<br>
 					   насколько вы изумительны!</p>
 					<div class="btn presentation-btn">
@@ -91,8 +84,8 @@
 					</div>
 				</div>
 			</section>
-			<hr>
-			<section class="content-info">   	<!-- Информация о компании -->
+			<hr class="hr-first">
+			<section class="content-info clearfix">   	
 				<div class="info-left">
 					<p><b>Мы - маленькая, но гордая<br>
 					    Дизайн-студия из краснодара.</b></p>
@@ -106,7 +99,7 @@
 				    </ul>
 				</div>
 				<div class="info-right">
-					<img class="right-logo" src="#" alt="Логотип NЁRDS">			<!-- Лого в блоке информации -->
+					<img class="right-logo" src="#" alt="Логотип NЁRDS">			
 					<p>КАК МЫ РАБОТАЕМ:</p>
 					<ul>
 						<li>С самоотдачей 146%</li>
@@ -115,8 +108,9 @@
 					</ul>
 				</div>
 			</section>
-			<hr>
-			<section class="content-partners"> 				<!-- Партнеры(фото) -->
+			<hr class="hr-second"> 	
+			<section class="content-partners clearfix">
+			<!-- Партнеры(фото) -->
 				<div class="partners-glukhanko">
 					<img src="#" alt="GLUKHANKO">
 				</div>
@@ -127,10 +121,10 @@
 					<img src="#" alt="BORODINSKI">
 				</div>
 			</section>
-			<hr>
+			<hr class="hr-third">
 		</div>
 	</main>
-	<footer class="footer-map">			<!-- Футер(карта) -->
+	<footer class="footer-map clearfix">			<!-- Футер(карта) -->
 		<img class="map" src="#" alt="Карта ">		<!-- Карта -->
 		<div class="container">		
 			<div class="footer-contacts">		<!-- Блок контактов повех карты -->
@@ -145,12 +139,16 @@
 			<img class="footer-logo" src="#" alt="NЁRDS">  <!-- Лого на карте -->
 		</div>	
 	</footer>
-	<footer class="footer-social">			<!-- Соц.Сети -->
-		<a class="social-btn social-vk" href="#">ВКОНТАКТЕ</a>
-		<a class="social-btn social-fb" href="#">ФЭЙСБУК</a>
-		<a class="social-btn social-inst" href="#">ИНСТАГРАМ</a>
-		<h3>Давайте дружить, это выгодно!</h3>
-		<p>Скидка 10% для друзей из социальных сетей.</p>
+	<footer class="footer-social">
+		<div class="container clearfix">		
+			<a class="social-btn social-vk" href="#">ВКОНТАКТЕ</a>
+			<a class="social-btn social-fb" href="#">ФЭЙСБУК</a>
+			<a class="social-btn social-inst" href="#">ИНСТАГРАМ</a>
+			<div class="social-info">
+				<h3>Давайте дружить, это выгодно!</h3>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
