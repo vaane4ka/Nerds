@@ -1,8 +1,9 @@
 /*base*/
 
 body {
-	min-width: 900px;
+	width: 100%; 
 	margin: 0;
+	padding: 0;
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -304,6 +305,14 @@ body {
 	background: #c09b24;
 }
 
+/*second content*/
+
+hr {
+	background: #eeeeee;
+	height: 2px;
+	border: none;
+}
+
 .hr-first {
 	margin-bottom: 60px;
 }
@@ -312,32 +321,123 @@ body {
 	margin-bottom: 75px;
 }
 
+/*secont content - left*/
+
 .info-left {
 	float: left;
 	width: 620px;
 	margin-right: 20px;
+	margin-top: 15px;
 }
+
+.left-info {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.left-text {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #283136;
+}
+
+p.left-text {
+	margin: 0;
+	margin-bottom: 45px;
+	padding: 0;
+}
+
+h2.left-text {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+}
+
+ul.left-text {
+	margin: 0;
+	padding-left: 25px;
+}
+
+.left-text li {
+	margin-bottom: 25px;
+	padding-left: 10px;
+}
+
+/*second content - right*/
 
 .info-right {
 	float: right;
 	width: 240px;
 }
 
+.right-logo {
+	margin-bottom: 75px;
+}
+
+.right-text {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #283136;
+}
+
+h2.right-text {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+
+	text-transform: uppercase;
+}
+
+ul.right-text {
+	margin: 0;
+	padding-left: 25px;
+}
+
+.right-text li {
+	margin-bottom: 25px;
+	padding-left: 10px;
+}
+
 .hr-second {
 	margin-bottom: 45px;
 }
+
+/*partners*/
 
 .partners-glukhanko {
 	float: left;
 	width: 198px;
 	padding-left: 12px;
 	margin-right: 120px;
+	margin-top: 20px;
+
+	opacity: 0.2;
+}
+
+.partners-glukhanko:hover,
+.partners-glukhanko:active {
+	opacity: 1;
 }
 
 .partners-academy {
 	float: left;
 	width: 199px;
 	margin-right: 123px;
+	margin-top: 10px;
+
+	opacity: 0.2;
+}
+
+.partners-academy:hover,
+.partners-academy:active {
+	opacity: 1;
 }
 
 .partners-borodinski {
@@ -345,49 +445,176 @@ body {
 	width: 200px;
 	padding-right: 19px;
 	margin-bottom: 30px;
+
+	opacity: 0.2;
+}
+
+.partners-borodinski:hover,
+.partners-borodinski:active {
+	opacity: 1.0;
 }
 
 .hr-third {
 	margin-bottom: 85px;
 }
 
+.footer-map {
+	width: 100%;
+	position: relative;
+}
+
+.map {
+	width: 100%	;
+	height: 416px;
+	background: #e9e5dc url("../img/map.jpg");
+	background-size: cover;
+}
+
 .footer-contacts {
-	float: left;
+	position: absolute;
+	top: 88px;
+	left: 160px;
+
 	width: 250px;
-	padding-top: 88px;
-	padding-bottom: 88px;
-	padding-left: 160px;
-	
+	background: #fff;
+	text-align: center;
+}
+
+.footer-contacts h3 {
+	margin: 0;
+	margin-bottom: 25px;
+	margin-top: 30px;
+	padding: 0;
+
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.footer-contacts p {
+	margin: 0;
+	padding: 0;
+
+	color: #666666;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+p.contacts-adress {
+	margin-bottom: 25px;
+}
+
+.contacts-btn {
+	margin-top: 30px;
+	margin-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	display: inline-block;
+	vertical-align: top;
+
+	background: #fb565a;
+}
+
+.contacts-btn:hover{
+	background: #d6494d;
+}
+
+.contacts-btn:active {
+	background: #b63538;
 }
 
 .footer-logo {
-	float: right;
-	padding-top: 110px;
-	padding-bottom: 115px;
+	position: absolute;
+	top: 112px;
+	right: 130px;
 }
 
 .footer-social {
 	margin-top: 80px;
+	font-size: 0px;
 }
 
 .social-vk {
-	float: left;
-	width: 65px;
+	display: inline-block;
+	vertical-align: top;
+
+	width: 60px;
+	height: 60px;
 	margin-right: 30px;
+	background: #e1e1e1 url("../img/social-sprite.png") no-repeat;
+	background-position: 16px 22px;
+	border-radius: 50%;
+
+	font-size: 0;
+
 }
 
 .social-fb {
-	float: left;
-	width: 65px;
+	display: inline-block;
+	vertical-align: top;
+
+	width: 60px;
+	height: 60px;
 	margin-right: 30px;
+	background: #e1e1e1 url("../img/social-sprite.png") no-repeat;
+	background-position: 17px -22px;
+	border-radius: 50%;
+
+	font-size: 0;
+	
 }
 
 .social-inst {
-	float: left;
-	width: 65px;
+	display: inline-block;
+	vertical-align: top;
+
+	width: 60px;
+	height: 60px;
+	background: #e1e1e1 url("../img/social-sprite.png") no-repeat;
+	background-position: 20px -68px;
+	border-radius: 50%;
+
+	font-size: 0;
+}
+
+.social-vk:hover,
+.social-fb:hover,
+.social-inst:hover {
+	background-color: #fb565a;
+}
+
+.social-vk:active,
+.social-fb:active,
+.social-inst:active {
+	background-color: #d6494d; 
 }
 
 .social-info {
 	float: right;
 	width: 560px;
+
+	font-size: 14px;	
+}
+
+.social-info h3 {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 500;
+}
+
+.social-info p {
+	margin: 0;
+	padding: 0;
+
+	color: #283136;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
 }
